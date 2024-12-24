@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.blog {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  padding-bottom: 241px;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: Inter, sans-serif;
+  color: #005880;
+  font-weight: 800;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  min-height: 500px;
+  width: 100%;
+  font-size: 50px;
+  color: #fff;
+  white-space: nowrap;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.headerImage {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.headerTitle {
+  position: relative;
+  margin-top: 200px;
+  font-size: 50px;
+}
+
+.categoriesTitle {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.mainContent {
+  display: flex;
+  margin-top: 38px;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 63px;
+}
+
+.categoryContainer {
+  display: flex;
+  justify-content: center;
+  /* Center the categories */
+  gap: 10px;
+  /* Space between categories */
+  flex-wrap: nowrap;
+  /* Prevent wrapping */
+  align-items: center;
+  padding-left: 200px;
+}
+
+.categoryContainer>* {
+  background-color: #004466;
+  /* Box background color */
+  /* Reduce padding to make the boxes smaller */
+  font-size: 14px;
+  /* Reduce text size */
+  color: white;
+  /* Text color */
+  border-radius: 5px;
+  /* Optional: Rounded corners */
+  text-align: center;
+  white-space: nowrap;
+  /* Prevent text wrapping */
+}
+
+.categoryTag {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #005880;
+  padding: 15px 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.article {
+  margin-top: 38px;
+  width: 100%;
+}
+
+.articleImage {
+  object-position: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+}
+
+.articleTitle {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 19px 0;
+  padding-left: 20px;
+  padding-right: 200px;
+}
+
+.articleMeta {
+  display: flex;
+  gap: 8px;
+  font-weight: 400;
+  padding-left: 20px;
+  padding-right: 200px;
+}
+
+.articleDate,
+.articleAuthor {
+  gap: 100px;
+}
+
+.articleContent {
+  font-weight: 400;
+  margin: 20px 0;
+  white-space: pre-wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+}
+
+.seeMore {
+  border-radius: 10px;
+  background-color: #005880;
+  color: #fff;
+  text-align: center;
+  padding: 19px 26px;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    min-height: 200px;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .headerTitle {
+    margin-top: 100px;
+    font-size: 1.8rem;
+  }
+
+  .headerImage {
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .categoriesTitle {
+    font-size: 24px;
+    margin: 10px;
+    padding-top: 100px;
+  }
+
+  .categoryContainer {
+    gap: 2px;
+    padding: 0 0px;
+    display: grid;
+    grid-template-columns: auto auto ;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .categoryContainer>* {
+    font-size: 10px;
+    padding: 8px 8px;
+  }
+  .articleTitle {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  .articleDate,
+  .articleAuthor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+  }
+  .articleAuthor {
+    margin-left: 30px;
+  }
+  .articleMeta {
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    padding-right: 10px;
+  }
+
+  .articleContent {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .seeMore {
+    padding: 8px 16px;
+    margin: 10px;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  .header {
+    min-height: 150px;
+    font-size: 18px;
+  }
+
+  .headerTitle {
+    margin-top: 80px;
+    font-size: 1.5rem;
+  }
+
+  .categoriesTitle {
+    font-size: 20px;
+  }
+
+  .categoryContainer {
+    gap: 2px;
+    padding: 0 0px;
+    display: grid;
+    grid-template-columns: auto auto ;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .categoryContainer>* {
+    font-size: 10px;
+    padding: 8px 8px;
+  }
+
+  .articleTitle {
+    font-size: 16px;
+  }
+
+  .articleContent {
+    font-size: 12px;
+  }
+
+  .seeMore {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
