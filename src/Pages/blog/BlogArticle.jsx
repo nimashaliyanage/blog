@@ -16,7 +16,6 @@ function BlogArticle({ image, title, date, author, content }) {
         <span className={styles.articleAuthor}>By {author}</span>
       </div>
       <p className={styles.articleContent}>{content}</p>
-      <button className={styles.seeMore}>See More</button>
     </article>
   );
 }

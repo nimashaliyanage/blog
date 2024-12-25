@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./Blog.module.css";
-import CategoryTag from "./CategoryTag";
 import BlogArticle from "./BlogArticle";
 
 const categories = [
-  "Mobile & Web Development",
-  "Mobile & Web Development",
-  "Mobile & Web Development",
-  "Mobile & Web Development",
+  "Mobile Development",
+  "CCTV Instalation",
+  "Networking",
+  "POS Systems",
+  "Web Development",
 ];
 
 const articles = [
@@ -53,12 +53,14 @@ function BlogPost() {
         <h1 className={styles.headerTitle}>BLOG</h1>
       </header>
 
-      <h2 className={styles.categoriesTitle}>categories</h2>
+      <h2 className={styles.categoriesTitle}>Categories</h2>
 
       <main className={styles.mainContent}>
         <div className={styles.categoryContainer}>
           {categories.map((category, index) => (
-            <CategoryTag key={index} text={category} />
+            <button key={index} className={styles.categoryButton}>
+              {category}
+            </button>
           ))}
         </div>
 
