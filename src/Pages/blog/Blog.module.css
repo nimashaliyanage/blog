@@ -171,15 +171,22 @@
 
 .articleMeta {
   display: flex;
-  gap: 8px;
+  flex-direction: row;
+  gap: 10px;
   font-weight: 400;
   padding-left: 20px;
   padding-right: 200px;
+  align-items: center;
 }
 
 .articleDate,
 .articleAuthor {
   gap: 100px;
+}
+.articleAuthor {
+  font-size: 12px;
+  justify-content: center;
+
 }
 
 .articleContent {
@@ -191,6 +198,7 @@
   padding-right: 20px;
   text-align: justify;
   color: #005880;
+  line-height: 20px;
 }
 
 .pagination {
