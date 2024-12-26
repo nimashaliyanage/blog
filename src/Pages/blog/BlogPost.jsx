@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import styles from "./Blog.module.css";
 import BlogArticle from "./BlogArticle";
 import Pagination from "./Pagination";
+import Hero1 from "./Asset/hero1.png";
+import Hero2 from "./Asset/hero2.jpg";
+import Hero3 from "./Asset/hero3.jpg";
 
 const categories = [
+  "All",
   "Mobile Development",
   "CCTV Installation",
   "Networking",
@@ -62,9 +66,21 @@ function BlogPost() {
       <header className={styles.header}>
         <img
           loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/e61cefa1137b65a012193ccf4c18f15d8763be0a3859197e84e2054403e6b674?placeholderIfAbsent=true&apiKey=7dcc2528d5a241efb932a561bca24f90"
+          src= {Hero1}
           className={styles.headerImage}
           alt="Blog header background"
+        />
+        <img
+          loading="lazy"
+          src= {Hero2}
+          className={styles.headerImage}
+          alt="Blog header background 2"
+        />
+        <img
+          loading="lazy"
+          src= {Hero3}
+          className={styles.headerImage}
+          alt="Blog header background 3"
         />
         <h1 className={styles.headerTitle}>BLOG</h1>
         <p className={styles.headerContent}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor turpis, dignissim sed efficitur quis, vestibulum at lectus. 
