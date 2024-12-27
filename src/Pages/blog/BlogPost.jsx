@@ -24,7 +24,7 @@ const articles = [
   {
     id: 1,
     image: Article4,
-    title: "1. How React is Revolutionizing Mobile App Development",
+    title: "How React and React Native Are Revolutionizing Mobile App Development",
     date: "2024 Dec, 22",
     author: "info@rtechsl.com",
     category: "Mobile Development", 
@@ -41,7 +41,7 @@ The growing community surrounding React Native further boosts its potential. Wit
   {
     id: 2,
     image: Article2,
-    title: "2. The Timeless Power of HTML and CSS in Modern Web Development",
+    title: "The Timeless Power of HTML and CSS in Modern Web Development",
     date: "2024 Dec, 22",
     author: "info@rtechsl.com",
     category: "Web Development",  
@@ -58,7 +58,7 @@ The future of HTML and CSS looks even more promising with the rise of CSS-in-JS 
   {
     id: 3,
     image: Article1,
-    title: "3. Why PHP and Laravel Are a Winning Combination for Web Applications",
+    title: "Why PHP and Laravel Are a Winning Combination for Web Applications",
     date: "2024 Dec, 22",
     author: "info@rtechsl.com",
     category: "Web Development", 
@@ -76,7 +76,7 @@ Laravel’s built-in security features, such as CSRF protection, encryption, and
   {
     id: 4,
     image: Article3,
-    title: "4. Java: The Reliable Workhorse of Enterprise and Mobile Development",
+    title: "Java: The Reliable Workhorse of Enterprise and Mobile Development",
     date: "2024 Dec, 23",
     author: "info@rtechsl.com",
     category: "Mobile Development", 
@@ -94,7 +94,7 @@ Looking ahead, Java’s adaptability continues to shine. Its strong support for 
   {
     id: 5,
     image: Article5,
-    title: "5. React and Tailwind CSS: A Perfect Match for Modern UI Development",
+    title: "React and Tailwind CSS: A Perfect Match for Modern UI Development",
     date: "2024 Dec, 23",
     author: "info@rtechsl.com",
     category: "Web Development",  
